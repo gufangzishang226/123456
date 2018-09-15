@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html,body{height:100%;margin:0px;padding:0px;font-family:"微软雅黑";font-size:14px;}
+        #allmap{height:500px;width:100%;}
+        .optionpanel{margin: 10px;}
+        #r-result{width:100%;}
+        #r-result p{margin:5px 0 0 10px;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PpHf5z0v4L24TySDb50q2LZQKgPKd25n"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <title>原创先锋</title>
+    <style>
+        #allmap {
+            width: 502px;
+            height: 330px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/con_animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/animate-complement.css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/contact.js"></script>
+    <!--<script src="js/jquery.goup.js"></script>-->
+
+</head>
+
+<body>
+<!-- head begin -->
+<div class="out">
+    <div class="head w clearfix">
+        <div class="logo">
+            <h1><a href="index.html" title="原创先锋"></a></h1>
+        </div>
+        <div class="head-r">
+            <span>联系我们 | Contact Us</span>
+            <a href="javascipt: void(0)">
+                <img src="img/A2.jpg" alt="">
+            </a>
+            <a href="javascipt: void(0)">
+                <img src="img/A4.jpg" alt="">
+            </a>
+            <a href="javascipt: void(0)">
+                <img src="img/A3.jpg" alt="">
+            </a>
+            <a href="javascipt: void(0)">
+                <img src="img/A1.jpg" alt="" id="imgss">
+                <img src="img/erweima.jpg" alt="" class="erweima">
+            </a>
+            <a href="javascipt: void(0)">
+                <img src="img/A5.jpg" alt="">
+            </a>
+            <div class="head-bot">
+                <img src="img/tu5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="bar w clearfix">
+        <ul>
+            <li class="current"><a href="javascript:void(0)">首页</a></li>
+            <li class="yiji">
+                <a href="../zyl/second.html">关于·原创</a>
+                <img src="img/bg.jpg" alt="">
+                <ul class="erji">
+                    <li>
+                        <a href="#">关于原创</a>
+                    </li>
+                    <li>
+                        <a href="#">设计优势</a>
+                    </li>
+                    <li>
+                        <a href="#">设计流程</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌故事</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="yiji">
+                <a href="../chenjun/chen.html">先锋·服务</a>
+                <img src="img/bg.jpg" alt="">
+                <ul class="erji">
+                    <li>
+                        <a href="../yaoyuan/index.html">定制型网站</a>
+                    </li>
+                    <li>
+                        <a href="#">响应式网站</a>
+                    </li>
+                    <li>
+                        <a href="#">APP定制开发</a>
+                    </li>
+                    <li>
+                        <a href="#">微信开发运营</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌VI设计</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../tan/index.1.html">原创·案例</a></li>
+            <li><a href="../wgf/share.html">先锋·分享</a></li>
+            <li class="bar-last"><a href="javascript:void(0)">联 系</a></li>
+        </ul>
+    </div>
+    <div class="lg">
+        <p>尊敬的<span></span>用户您已登录</p>
+    </div>
+</div>
+<!-- head end -->
+
+<div class="tonglan">
+    <div class="ban w">
+        <button class="text">改变   vs    不改变</button>
+        <div class="coin">
+            <!--<p>我们在路上&nbsp;&nbsp;&nbsp;&nbsp;你在哪?</p>-->
+            <p aria-label="PeeledText" class="jingli">
+                <span data-text="我">我</span>
+                <span data-text="们">们</span>
+                <span data-text="在">在</span>
+                <span data-text="路">路</span>
+                <span data-text="上">上</span>
+                <span data-text="你">你</span>
+                <span data-text="在">在</span>
+                <span data-text="哪">哪</span>
+            </p>
+        </div>
+        <div class="con"><p>WE ARE ON TEH WAY , WHERE ARE YOU?</p></div>
+    </div>
+</div>
+<div class="contact w clearfix">
+    <div class="contact-l">
+        <div class="tran">
+            <img src="img/pic5.jpg" alt="" id="con_img">
+        </div>
+        <div id="allmap"></div>
+        <div id="r-result">
+            <div class="optionpanel">
+                <label style="font-size: 14px; font-weight: 400">选择主题</label>
+                <select id="stylelist" onchange="changeMapStyle(this.value)"></select>
+            </div>
+        </div>
+    </div>
+    <div class="contact-r">
+        <h2>北京原创先锋网络科技发展有限公司</h2>
+        <p>
+            <img src="img/tu111.jpg" alt="">
+            010-68703788/66/87/89
+        </p>
+        <p>
+            <img src="img/tu112.jpg" alt="">
+            北京市海淀区大钟寺十三号院华杰大厦11B8
+        </p>
+        <p>
+            地铁十三号线大钟寺站下车，西南方向500米处
+        </p>
+        <h2>开户行</h2>
+        <p>
+            行址：工行阜成路支行
+        </p>
+        <p>
+            账号：0200 0417 0920 0037 836
+        </p>
+        <p>
+            收款人：北京原创先锋网络科技发展有限公司
+        </p>
+    </div>
+</div>
+<div class="join">
+    <div class="joinUs w">
+        <div class="tran">
+            <img src="img/pic6.jpg" alt="" id="join_img">
+        </div>
+        <div class="join_job">
+            <h2>谈吐优雅的客户经理</h2>
+            <!--<p aria-label="PeeledText" class="jingli">-->
+                <!--<span data-text="谈">谈</span>-->
+                <!--<span data-text="吐">吐</span>-->
+                <!--<span data-text="优">优</span>-->
+                <!--<span data-text="雅">雅</span>-->
+                <!--<span data-text="的">的</span>-->
+                <!--<span data-text="客">客</span>-->
+                <!--<span data-text="户">户</span>-->
+                <!--<span data-text="经">经</span>-->
+                <!--<span data-text="理">理</span>-->
+            <!--</p>-->
+            <p>他们有<em>高瞻远瞩</em>的视野思维, 他们深入行业针对不同的客户</p>
+            <p>他们有不拿下客户<em>誓不罢休</em>的心</p>
+            <p>他们<em>统帅全局</em>，善于换位思考</p>
+            <p>监控项目按时优质完成</p>
+            <p>如果你喜欢各种style的殊死协调和沟通，欢迎您</p>
+            <p>谈吐优雅的<em>客户经理</em></p>
+        </div>
+    </div>
+</div>
+<div class="bg_box">
+    <div class="container ">
+        <img src="img/bg17.png" alt="">
+        <div class="jr_job w">
+            <!--<h2>高逼格的设计师</h2>-->
+            <div  class="container-exibition-text is-animate text-center style1">
+                <div style="animation-delay: 0s;">高</div>
+                <div style="animation-delay: 0.1s;">逼</div>
+                <div style="animation-delay: 0.2s;">格</div>
+                <div style="animation-delay: 0.3s;">的</div>
+                <div style="animation-delay: 0.4s;">设</div>
+                <div style="animation-delay: 0.5s;">计</div>
+                <div style="animation-delay: 0.5s;">师</div>
+            </div>
+            <p>他们是故事的<em>叙述者</em>，他们是作品的<em>阐述者</em></p>
+            <p>他们天马星空，不拘一格，精雕细琢</p>
+            <p>设计工具是他们的第二双手</p>
+            <p>他们<em>玩转创意</em>，布局界面，总会给我们意外的惊喜</p>
+            <p>如果你对视觉有讲究，对设计有追求，欢迎你</p>
+            <p>高逼格的<em>设计师</em></p><br><br><br>
+            <p><img src="img/tu114.jpg" alt=""></p><br><br><br>
+            <h3>企业邮箱:</h3>
+            <span>hr@bjycxf.com</span>
+        </div>
+    </div>
+</div>
+<!-- foot start -->
+<div class="foot">
+    <div class="footc w">
+        <div class="foot_l">
+            <div class="foot_lt">YC & 原创官方微信</div>
+            <div class="foot_ltu">
+                <img src="img/erweima.jpg" >
+            </div>
+        </div>
+        <div class="foot_c">
+            <div class="callus">Contact Us & 联系我们</div>
+            <div class="xinxi">
+                <h2>TEL： 010-68703788/66/87/89</h2>
+                <div class="dizhi">地址：北京市海淀区大钟寺十三号院华杰大厦11B8室</div>
+                <span>© Copyright 2004-2014 bjycxf.com All Rights Reserved 版权所有</span><br>
+                <span>京ICP备09080439号 京公网安备11010802012755号</span>
+                    <span>
+                        <a href="#">
+                            <img class="dong" src="https://icon.cnzz.com/img/pic.gif" alt="">
+                        </a>
+                    </span>
+                <a href="http://tongji.baidu.com/web/welcome/login">
+                    <img src="img/tu33.png">
+                </a>
+            </div>
+        </div>
+        <div class="foot_r">
+            <div class="foot_rt">本站导航 & 服务项目</div>
+            <div class="foot_ru">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">建站服务</a></li>
+                    <li><a href="#">原创案例</a></li>
+                    <li><a href="#">功能演示</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">网站建设</a></li>
+                    <li><a href="#">网页设计</a></li>
+                    <li><a href="#">网站制作</a></li>
+                    <li><a href="#">建站常识</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">微站开发</a></li>
+                    <li><a href="#">推广策划</a></li>
+                    <li><a href="#">平面设计</a></li>
+                    <li><a href="#">建站方案</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+<!-- 返回顶部 -->
+
+<script>
+
+</script>
+
+</body>
+</html>
+<script type="text/javascript" src="http://lbsyun.baidu.com/custom/stylelist.js"></script>
+<script src="js/map.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $.goup({
+            trigger: 100,
+            bottomOffset: 10,
+            locationOffset: 180,
+            titleAsText: true,
+            title:'',
+        });
+    });
+
+</script>

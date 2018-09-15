@@ -1,0 +1,33 @@
+html{ height:100%;}
+
+body{padding:0px ;margin:0;  font-family:"Microsoft YaHei";font-size:12px;  position:relative; overflow-x:hidden; background:#ffffff; padding-top:39px;height:100%;}
+
+a,p,dl,dt,dd,ul,li,h2,h1,h3,h4,h5,h6,table,tr,td,form,iframe,font,em,i{ font-size:12px; font-weight:normal;word-break: normal;word-wrap: break-word;  font-style:normal; padding:0px ;margin:0; }
+
+a{text-decoration:none;outline:none;-moz-outline:none;}
+
+a:hover{ text-decoration:none;}
+
+p{word-break: normal;word-wrap: break-word; }
+
+img{ border:none;max-width:100%;}
+
+li{ list-style:none;}
+
+input {outline: none;}
+
+textarea {outline: none;}
+
+
+
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+
+.clearfix {zoom:1;}	
+
+a,li,dl,dt,dd,h1,span,h2,h3, b,i,em,p{-webkit-transition:all 0.2s linear;-mos-transition:all 0.2s linear;-mz-transition:all 0.2s linear;-o-transition:all 0.2s linear;transition:all 0.2s linear;}
+
+a:hover,li:hover,dl:hover{-webkit-transition:all 0.2s linear;-mos-transition:all 0.2s linear;-mz-transition:all 0.2s linear;-o-transition:all 0.2s linear;transition:all 0.2s linear;}
+
+@media(max-width:1024px){
+body{padding:0px ;margin:0;  font-family:"Microsoft YaHei";font-size:12px;  position:relative; overflow-x:hidden; background:#ffffff; padding-top:10px;height:100%;}	
+}

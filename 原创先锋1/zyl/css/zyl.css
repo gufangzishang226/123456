@@ -1,0 +1,211 @@
+.yc_banner {
+    clear: both;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background:#ffd02c;
+    padding: 70px 0 70px 0;
+}
+.span1 {
+    display: inline-block;
+    padding: 0 0px;
+    line-height: 46px;
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.span2 {
+    height: auto;
+    overflow: hidden;
+    line-height: 55px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.span3 {
+    height: auto;
+    overflow: hidden;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+.span3 p {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+.yc_box {
+    height: auto;
+    overflow: hidden;
+    padding: 56px 0;
+}
+.yc_bt {
+    height: auto;
+    min-height: 62px;
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 32px;
+}
+.yc_bc {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 36px;
+}
+.yc_bb {
+    height: auto;
+    overflow: hidden;
+}
+.yc_b1 {
+    float: left;
+    width: 44%;
+    left:-445px;
+    position: relative;
+    height: auto;
+    opacity: 0;
+    
+}
+.yc_b2 {
+    float: right;
+    width: 56%;
+    height: auto;
+    right:-565px;
+    position: relative;
+    opacity: 0;
+    
+}
+.yc_bc h2 {
+    line-height: 44px;
+    color: #170b1d;
+    font-size: 22px;
+}
+.yc_bc p {
+    line-height: 29px;
+    color: #666666;
+    font-size: 14px;
+}
+.yc_b1 h2 {
+    line-height: 44px;
+    color: #170b1d;
+    font-size: 22px;
+}
+.yc_b1 p {
+    line-height: 29px;
+    color: #666666;
+    font-size: 14px;
+}
+.yc_b2 img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ys_box {
+    height: auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.ys_bc{
+    height: auto;
+    margin-bottom:36px;
+    overflow: hidden;
+}
+.ys_bc h2{
+    line-height: 44px;
+    color: #170b1d;
+    font-size: 22px;
+}
+
+.ys_bc p {
+    line-height: 44px;
+    color: #170b1d;
+    font-size: 22px;
+}
+.ys_bt {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    min-height: 68px;
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 32px;
+    top:-68px;
+    opacity: 0;
+}
+
+.coimc {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+}
+.coimc_l{   
+        float: left;  
+        height: auto;
+        padding-top: 31px;
+        position: relative;
+        left: -392px;
+        opacity: 0;
+}
+.coimc_r{
+        float: right;     
+        height: auto;
+        padding-top: 31px;
+        position: relative;
+        right: -280px;
+        opacity: 0;
+}
+.coimc_l p {
+    line-height: 29px;
+    color: #666666;
+    font-size: 14px;
+}
+.coimc_r p {
+    line-height: 29px;
+    color: #666666;
+    font-size: 14px;
+}
+.yc_bottom {
+    height: auto;
+    clear:both;
+    overflow: hidden;
+    padding:54px 0 0 0 ;
+}
+.story_bg{
+        background: url(../images/bg.png) no-repeat left top;
+        padding: 50px 0 20px 0;
+        text-align: right;
+        overflow: hidden;
+       
+}
+.tucoie {
+    float: right;
+    padding-right: 44px;
+    width: 85%;
+}
+
+.tucoie p{
+        float: right;
+        line-height: 20px;
+        width: 14px;
+        font-size: 14px;
+        margin-left: 10px;
+}
+.story_bg img {
+        float: right;
+}
+.tucoie p em {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.jiuu {
+    float: right;
+    width: 25px;
+}

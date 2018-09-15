@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京网站建设|北京网站设计|北京网站制作|北京原创先锋网站建设公司</title>
+    <link rel="stylesheet"  href="../css/index.css" />
+    <script src="../js/jquery-1.12.2.js"></script>
+    <script src="../js/zoomImgRollover.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        $(function () {
+            $('.nav li').mouseover(function () {
+                $($(this).children()[0]).find('span').stop().animate({ 'top': '-30px', 'opacity': '0' }, 400);
+                $($(this).children()[1]).find('span').stop().animate({ 'top': '0px', 'opacity': '1' }, 400);
+               
+            });
+            $('.nav li').mouseout(function () {
+                
+                $($(this).children()[0]).find('span').stop().animate({ 'top': '0px', 'opacity': '1' }, 400);
+                $($(this).children()[1]).find('span').stop().animate({ 'top': '20px', 'opacity': '0' }, 400);
+            });
+
+            $('.ycal_b a').mouseover(function () {
+
+                $($(this).children()[1]).find('img').stop().animate({ 'width': '520px', 'height': '500px', 'top': '-2px', 'left': '0px' }, 500)
+            });
+
+            $('.ycal_b a').mouseout(function () {
+
+                $($(this).children()[1]).find('img').stop().animate({ 'width': '470px', 'height': '399px' }, 500)
+            });
+
+            $('.ycal_b .unie').mouseover(function () {
+
+                $($(this).children()[1]).find('img').stop().animate({ 'width': '520px', 'height': '330px', 'top': '-10px', 'left': '-20px' }, 500)
+            });
+            $('.ycal_b .unie').mouseout(function () {
+
+                $($(this).children()[1]).find('img').stop().animate({ 'width': '470px', 'height': '250px' }, 500)
+            });
+
+            $('.tupe').mouseover(function () {
+
+                $(this).find('img').stop().animate({ 'width': '1600px', 'height': '700px', 'top': '0px', 'left': '0px' }, 500)
+            });
+            $('.tupe').mouseout(function () {
+
+                $(this).find('img').stop().animate({ 'width': '1519px', 'height': '640px' }, 500)
+            });
+
+            $('.uonr').mouseover(function(){
+                console.log($(this).children().children()[1])
+                $($(this).children().children()[1]).stop().animate({'top': '-500px', 'opacity': '0' }, 500)
+                $($(this).children().children()[2]).stop().animate({'top': '216px', 'opacity': '1','color':'red !important' }, 500)
+            });
+            $('.uonr').mouseout(function(){
+                $($(this).children().children()[1]).stop().animate({'top': '216px', 'opacity': '1' }, 500)
+                $($(this).children().children()[2]).stop().animate({'top': '648px', 'opacity': '0' }, 500)
+            });
+           
+            $(window).scroll(function () {
+                    
+                if ( $(document).scrollTop() >= 300 && $(document).scrollTop() < 1600 ) {
+                   
+                    $('.ciron').stop().animate({ 'top': 0, 'opacity': 1 }, 800);
+                    $('.ciron1').stop().animate({ 'top': 0, 'opacity': 1 }, 1000);
+                    $('.ciron2').stop().animate({ 'top': 0, 'opacity': 1 }, 1400);
+                    $('.ciron3').stop().animate({ 'top': 0, 'opacity': 1 }, 2000);
+                    $('.ciron4').stop().animate({ 'top': 0, 'opacity': 1 }, 1600);
+
+                    $('.fwzi-lt').stop().animate({ 'top': 0, 'opacity': 1 }, 1000);
+                    $('.fwzi-lc').stop().animate({ 'left': 0, 'opacity': 1 }, 1000);
+                    $('.fwzi-lv').stop().animate({ 'right': 0, 'opacity': 1 }, 1000);
+                } else if ($(document).scrollTop() >= 1700 || $(document).scrollTop() < 200) {
+                   
+                    $('.ciron').stop().animate({ 'top': 0, 'opacity': 0 }, 60);
+                    $('.ciron1').stop().animate({ 'top': 0, 'opacity': 0 }, 600);
+                    $('.ciron2').stop().animate({ 'top': 0, 'opacity': 0 }, 160);
+                    $('.ciron3').stop().animate({ 'top': 0, 'opacity': 0 }, 600);
+                    $('.ciron4').stop().animate({ 'top': 0, 'opacity': 0 }, 160);
+
+                    $('.fwzi-lt').stop().animate({ 'top': 0, 'opacity': 0 }, 600);
+                    $('.fwzi-lc').stop().animate({ 'left': 0, 'opacity': 0 }, 600);
+                    $('.fwzi-lv').stop().animate({ 'right': 0, 'opacity': 0 }, 600);
+                }
+                if ($(document).scrollTop() >= 3200) {
+                    $('.ycpin_t').stop().animate({ 'top': 0, 'opacity': 1 }, 1000);
+                    $('.ycpin_b p').stop().animate({ 'bottom': 0, 'opacity': 1 }, 1000);
+
+                }
+
+            })
+
+
+
+        })
+
+   
+
+
+
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="logo">
+                <a href="http://www.bjycxf.com">
+                    <img src="../images/logo.jpg" alt="北京网站建设公司" title="原创先锋LOGO" />
+                </a>
+            </div>
+            <div class="nav">
+                <ul style="position: relative;">
+                    <li style="width: 40px">
+                        <a class="a1" href="#">
+                            <span style="position: absolute;">首页</span>
+                        </a>
+                        <a class="a2" href="#">
+                            <span style="position: absolute;top: 20px;opacity: 0;color: red">首页</span>
+                        </a>
+                    </li>
+                    <li style="width: 50px">
+                        <a class="a1" href="../../zyl/second.html" data-re="true" data-page="关于原创" data-hover="关于原创">
+                            <span style="position: absolute;">关于原创</span>
+                        </a>
+                        <a class="a2" href="../../zyl/second.html">
+                            <span style="position: absolute;top: 50px;opacity: 0;color: red">关于原创</span>
+                        </a>
+                    </li>
+                    <li style="width: 50px">
+                        <a class="a1" href="../../chenjun/chen.html" data-re="true" data-page="先锋服务" data-hover="先锋服务">
+                            <span style="position: absolute;">先锋服务</span>
+                        </a>
+                        <a class="a2" href="../../chenjun/chen.html">
+                            <span style="position: absolute;top: 50px;opacity: 0;color: red">先锋服务</span>
+                        </a>
+                    </li>
+                    <li style="width: 50px">
+                        <a class="a1" href="../../tan/index.1.html" data-re="true" data-page="原创案例" data-hover="原创案例">
+                            <span style="position: absolute;">原创案例</span>
+                        </a>
+                        <a class="a2" href="../../tan/index.1.html">
+                            <span style="position: absolute;top: 50px;opacity: 0;color: red">原创案例</span>
+                        </a>
+                    </li>
+                    <li style="width: 50px">
+                        <a class="a1" href="../../wgf/share.html" data-re="true" data-page="先锋分享" data-hover="先锋分享">
+                            <span style="position: absolute;">先锋分享</span>
+                        </a>
+                        <a class="a2" href="../../wgf/share.html">
+                            <span style="position: absolute;top: 50px;opacity: 0;color: red">先锋分享</span>
+                        </a>
+                    </li>
+                    <li style="width: 50px">
+                        <a class="a1" href="../../qx/contact.html" data-re="true" data-page="联系" data-hover="联系">
+                            <span style="position: absolute;">联系</span>
+                        </a>
+                        <a class="a2" href="../../qx/contact.html">
+                            <span style="position: absolute;top: 50px;opacity: 0;color: red">联系</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="yong">
+                    <a href="#">
+                        <img src="../images/tu.jpg" alt="" title="北京原创先锋网站建设公司" />
+                    </a>
+                    <em>
+                        <img src="../images/bg.jpg" alt="北京原创先锋网站建设公司" title="北京原创先锋网站建设公司" />
+                    </em>
+                    <a href="#" target="_blank">
+                        <img src="../images/tu1.jpg" title="QQ咨询" alt="北京原创先锋网站建设公司" />
+                        <a href="#" class="you">
+                            <img src="../images/tu2.jpg" alt="北京原创先锋网站建设公司" title="北京原创先锋网站建设公司" />010-68703788/66</a>
+
+                </span>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="slider" id="slider" style="--img-prev:url(../images/sj_banner.jpg)">
+        <div class="slider__content" id="slider-content">
+            <div class="slider__images">
+                <div class="slider__images-item slider__images-item--active" data-id="1"><img src="../images/sj_banner.jpg"/></div>
+                <div class="slider__images-item" data-id="2"><img src="../images/sj_banner1.jpg"/></div>
+                <div class="slider__images-item" data-id="3"><img src="../images/sj_banner2.jpg"/></div>
+                <div class="slider__images-item" data-id="4"><img src="../images/sj_banner3.jpg"/></div>
+            </div>
+            <div class="slider__text">
+                <div class="slider__text-item slider__text-item--active" data-id="1">
+                    <div class="slider__text-item-head">
+                        <h3></h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="2">
+                    <div class="slider__text-item-head">
+                        <h3></h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="3">
+                    <div class="slider__text-item-head">
+                        <h3></h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="4">
+                    <div class="slider__text-item-head">
+                        <h3></h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider__nav">
+            <div class="slider__nav-arrows">
+                <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+                <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+            </div>
+            <div class="slider__nav-dots" id="slider-dots">
+                <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+                <div class="slider__nav-dot" data-id="2"></div>
+                <div class="slider__nav-dot" data-id="3"></div>
+                <div class="slider__nav-dot" data-id="4"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="banner-2">
+        <div class="ciron">
+            <img src="../images/tu9.png">
+        </div>
+        <div class="ciron1">
+            <img src="../images/tu10.png">
+        </div>
+        <div class="ciron2">
+            <p>原创先锋成立于2008年，10年专注品牌、营销、应用型网站建设，是集创意、VI设计、网页制作、数据库开发、APP定制开发为一体的信息化服务商。</p>
+            <p>曾为众泰、东方雨虹、中海建设总局、天津股权交易所、建国门街道总工会、中国仓储与配送协会、中国文学艺术基金会、文化置业、中国建筑科学研究院、北京成熟企划规划设计院、 庆东纳碧安等提供专业的网站建设服务</p>
+        </div>
+        <div class="ciron3">
+        </div>
+        <div class="ciron4">
+            <ul>
+                <li>
+                    <span class="count">2008</span>
+                    <span class="count1">initiate</span>
+                </li>
+                <li>
+                    <span class="count">10years</span>
+
+                    <span class="count1">experience</span>
+                </li>
+                <li>
+                    <span class="count">3000+</span>
+
+                    <span class="count1">customer</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="fwzi">
+            <div class="fwzi-l">
+                <div class="fwzi-lt">
+                    <img src="../images/tu11.png">
+                </div>
+                <div class="fwzi-lc">
+                    <img src="../images/tu12.png">
+                </div>
+                <div class="fwzi-lv">
+                    <p>我们以独到的设计理念和精工细作的专业精神，让您的网站从品牌定位、到品牌设计、品牌推广、品牌咨询环环相扣，为各个层次或不同类型的企业制定发展目标与需求。</p>
+                </div>
+                <div class='fwzi-lb'>
+                    <a href="#">了解详情</a>
+                </div>
+            </div>
+            <div class="fwzi-r">
+                <div class="slick-track">
+                    <div class="slick-slide" style="width: 200px;">
+                        <div class="uonr">
+                            <a href="#">
+                                <div class="uonr_t">
+                                    <img src="../images/tu13.png">
+                                </div>
+                                <div class="uonr_b" style="position: absolute; top:216px;opacity:1;">
+                                    <div>CUSTOM WEBSITE</div>
+                                    <div class="uonr_bb" >
+                                        <ul>
+                                            <li>企业&amp;品牌官网</li>
+                                            <li>集团上市公司官网</li>
+                                            <li>核心电商系统</li>
+                                            <li>门户网站建设</li>
+                                            <li>业务系统定制开发</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uonr_b1" style="position: absolute; top:648px;opacity:0;color:gray">
+                                      <div class="uonr_bt">CUSTOM WEBSITE</div>
+                                      <div class="uonr_bb">
+                                            <ul>
+                                              <li>企业&amp;品牌官网</li>
+                                              <li>集团上市公司官网</li>
+                                              <li>核心电商系统</li>
+                                              <li>门户网站建设</li>
+                                              <li>业务系统定制开发</li>
+                                            </ul>
+                                          </div>
+                                  </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-slide" style="width: 230px;">
+                        <div class="uonr">
+                            <a href="#">
+                                <div class="uonr_t">
+                                    <img src="../images/tu14.png">
+                                </div>
+                                <div class="uonr_b" style="position: absolute; top:216px;opacity:1;">
+                                    <div>RESPONSIVE WEBSITE</div>
+                                    <div class="uonr_bb">
+                                        <ul>
+                                            <li>Html5响应式网站</li>
+                                            <li>手机端网站建设</li>
+                                            <li>创意H5设计制作</li>
+                                            <li>线上推广H5页面</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uonr_b1" style="position: absolute; top:648px;opacity:0;color: gray">
+                                         <div class="uonr_bt">RESPONSIVE WEBSITE</div>
+                                         <div class="uonr_bb">
+                                               <ul>
+                                                    <li>Html5响应式网站</li>
+                                                    <li>手机端网站建设</li>
+                                                    <li>创意H5设计制作</li>
+                                                    <li>线上推广H5页面</li>
+                                               </ul>
+                                             </div>
+                                     </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-slide" style="width: 205px;">
+                        <div class="uonr">
+                            <a href="#">
+                                <div class="uonr_t">
+                                    <img src="../images/tu15.png">
+                                </div>
+                                <div class="uonr_b" style="position: absolute; top:216px;opacity:1;">
+                                    <div>APP DEVELOPMENT</div>
+                                    <div class="uonr_bb">
+                                        <ul>
+                                            <li>移动APP商城</li>
+                                            <li>移动互联网产品开发</li>
+                                            <li>移动端系统UI设计</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uonr_b1" style="position: absolute; top:648px;opacity:0;color: gray">
+                                             <div class="uonr_bt">APP DEVELOPMENT</div>
+                                             <div class="uonr_bb">
+                                                   <ul>
+                                                        <li>移动APP商城</li>
+                                                        <li>移动互联网产品开发</li>
+                                                        <li>移动端系统UI设计</li>
+                                                   </ul>
+                                                 </div>
+                                         </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-slide" style="width: 217px;">
+                        <div class="uonr">
+                            <a href="#">
+                                <div class="uonr_t">
+                                    <img src="../images/tu16.png">
+                                </div>
+                                <div class="uonr_b" style="position: absolute; top:216px;opacity:1;">
+                                    <div>WECHAT OPERATION</div>
+                                    <div class="uonr_bb">
+                                        <ul>
+                                            <li>手机网站与微官网开发</li>
+                                            <li style=" color:#ce0000; font-weight:bold">定制小程序开发</li>
+                                            <li>微专题开发</li>
+                                            <li>微信公众号建设</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uonr_b1" style="position: absolute; top:648px;opacity:0;color: gray">
+                                         <div class="uonr_bt">WECHAT OPERATION
+                                               <ul>
+                                                    <li>手机网站与微官网开发</li>
+                                                    <li style=" color:#ce0000; font-weight:bold">定制小程序开发</li>
+                                                    <li>微专题开发</li>
+                                                    <li>微信公众号建设</li>
+                                               </ul>
+                                             </div>
+                                     </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-slide" style="width: 208px;">
+                        <div class="uonr">
+                            <a href="#">
+                                <div class="uonr_t">
+                                    <img src="../images/tu17.png">
+                                </div>
+                                <div class="uonr_b" style="position: absolute; top:216px;opacity:1;">
+                                    <div>BRAND VISUAL IDENTITY</div>
+                                    <div class="uonr_bb">
+                                        <ul>
+                                            <li>品牌标志设计</li>
+                                            <li>品牌吉祥物设计</li>
+                                            <li>品牌视觉形象识别系统设计</li>
+                                            <li>画册/宣传册/推广物料设计</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uonr_b1" style="position: absolute; top:648px;opacity:0;color: gray">
+                                         <div class="uonr_bt">BRAND VISUAL IDENTITY</div>
+                                         <div class="uonr_bb">
+                                               <ul>
+                                                    <li>品牌标志设计</li>
+                                                    <li>品牌吉祥物设计</li>
+                                                    <li>品牌视觉形象识别系统设计</li>
+                                                    <li>画册/宣传册/推广物料设计</li>
+                                               </ul>
+                                             </div>
+                                     </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="ycal_t">
+            <span class="ycal_t1">
+                <img src="../images/tu18.png">
+            </span>
+            <span class="ycal_t2">
+                <img src="../images/bg2.jpg">
+            </span>
+            <div class="ycal_tr">
+                <ul>
+                    <li>
+                        <a href="http://www.bjycxf.com/qywz/">品牌形象</a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.bjycxf.com/dzsw/">电子商务</a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.bjycxf.com/hymh/">行业门户</a>
+                    </li>
+
+                    <li class="qcbj">
+                        <a href="http://www.bjycxf.com/html5/">html5网站</a>
+                    </li>
+                </ul>
+                <font>
+                    <a href="#">案例库</a>
+                </font>
+            </div>
+
+        </div>
+        <div class="ycal_b">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="ytuc">
+                            <h4>
+                                <img src="../images/tu19.png" alt="北京原创先锋网站建设公司" title="北京原创先锋网站建设公司">
+                            </h4>
+                            <h5>
+                                <p class="ytuc_1">众泰大迈国际站</p>
+                                <p class="ytuc_2">品牌形象&amp;响应式网站设计</p>
+                            </h5>
+                        </div>
+                        <div class="tupc">
+                            <img src="../images/tu3.jpg" alt="北京网站建设" title="众泰大迈网站建设案例">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ytuc">
+                            <h4>ORIENTAL
+                                <br> YUHONG
+                            </h4>
+                            <h5>
+                                <p class="ytuc_1">东方雨虹</p>
+                                <p class="ytuc_2">品牌形象&amp;网站设计、手机端网站设计</p>
+                            </h5>
+                        </div>
+                        <div class="tupc">
+                            <img src="../images/dfyh.jpg" alt="响应式网站开发" title="北东方雨虹网站开发案例">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ytuc">
+                            <h4>JIANGUOMEN OF
+                                <br> TRADE UNIONS</h4>
+                            <h5>
+                                <p class="ytuc_1">建国门街道总工会</p>
+                                <p class="ytuc_2">品牌形象&amp;响应式网站设计</p>
+                            </h5>
+                        </div>
+                        <div class="tupc">
+                            <img src="../images/jgm.jpg" alt="北北京网站制作" title="建国门街道总工会网站开发案例">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ytuc">
+                            <h4>&nbsp;</h4>
+                            <h5>
+                                <p class="ytuc_1">中海工程建设总局</p>
+                                <p class="ytuc_2">品牌形象&amp;响应式网站设计</p>
+                            </h5>
+                        </div>
+                        <div class="tupc">
+                            <img src="../images/zh_tu.jpg" alt="北京网站建设公司" title="中海工程建设总局">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ytuc">
+                            <h4>EIJING cULURAL REAL
+                                <br> ESTATE Co., Ltd.e</h4>
+                            <h5>
+                                <p class="ytuc_1">北京市文化置业有限公司</p>
+                                <p class="ytuc_2">品牌形象&amp;响应式网站设计</p>
+                            </h5>
+                        </div>
+                        <div class="tupc">
+                            <img src="../images/tu6.jpg" alt="北京网站建设公司" title="北京文化置业网站开发案例">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="unie">
+                            <div class="zoni">
+                                <h4>中国建筑科学研究院</h4>
+                                <h5>
+                                    <p class="zoni_1" style="font-weight:bold; font-size:26px; line-height:45px; margin-bottom:8px;">&nbsp;</p>
+                                    <p class="zoni_2" style="font-weight:bold">品牌形象&amp;响应式网站设计</p>
+                                </h5>
+                            </div>
+                            <div class=".ycal_b1">
+                                <img src="../images/jz_tu.jpg" alt="网站开发公司" title="中国建筑科学研究院">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="bocnie">
+                        <a href="#">查看更多原创作品
+                            <img src="../images/tu20.png" alt="网站建设公司" title="查看北京网站建设公司更多案例">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box3" style="clear: both;">
+        <div class="ycpin">
+            <div class="ycpin_t">
+                <h6>原创，是一种品格上的坚守</h6>
+                <p>我们诞生于中国互联网的浪潮中</p>
+            </div>
+            <div class="ycpin_b ">
+                <p>走在原创与定制的路上，有过坎坷、亦或艰难，可我们从未停下脚步；</p>
+                <p>从蹒跚学步到蹑影追风，我们用了10年的光阴；</p>
+                <p>今天我们再度启程，只为还在前方踌躇等待的你！</p>
+            </div>
+        </div>
+
+        <div class="tupe">
+            <img src="../images/tu11.jpg">
+        </div>
+    </div>
+    <!-- end -->
+    <div class="box4">
+        <div class="footter_t">
+            <div class="footter_tl">
+                <div class="fotter_tl1">
+                    <p>
+                        <a href="http://www.bjycxf.com/About/about.html">关于我们</a>
+                        <a href="http://www.bjycxf.com/Supporting_services/Supporting_services.html">建站服务</a>
+                        <a href="http://www.bjycxf.com/qywz/">原创案例</a>
+                        <a href="http://demo.bjycxf.com/">功能演示</a>
+                        <a href="">网站建设</a>
+                        <a href="">网页设计</a>
+                        <a href="">网站制作</a>
+                        <a href="http://www.bjycxf.com/jianzhanchangshi/">建站常识</a>
+                        <a href="">微站开发</a>
+                        <a href="">推广策划</a>
+                        <a href="">平面设计</a>
+                        <a href="" class="qcbj">建站方案</a>
+                    </p>
+                </div>
+                <div class="fotter_tl2">
+                    <p>
+                        <a href="http://www.bjycxf.com">首 页</a>
+                        <em>丨</em>
+                        <a href="http://www.bjycxf.com/About/about.html">关 于 · 原 创</a>
+                        <em>丨</em>
+                        <a href="http://www.bjycxf.com/Supporting_services/Supporting_services.html">先 锋 · 服 务</a>
+                        <em>丨</em>
+                        <a href="http://www.bjycxf.com/qywz/">原 创 · 案 例</a>
+                        <em>丨</em>
+                        <a href="http://www.bjycxf.com/jianzhanchangshi/">先 锋 · 分 享</a>
+                        <em>丨</em>
+                        <a href="http://www.bjycxf.com/About/contact.html">联 系</a>
+                    </p>
+                </div>
+            </div>
+            <div class="fotter_tr">
+                <dl>
+                    <dt>
+                        <img src="../images/tu12.jpg" alt="网站开发公司" title="北京原创先锋网站建设公司">
+                    </dt>
+                    <dd>新浪微博</dd>
+                </dl>
+                <dl class="your">
+                    <dt>
+                        <img src="../images/tu13.jpg" alt="网站建设公司" title="北京原创先锋网站建设公司">
+                    </dt>
+                    <dd>微信公众号</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="fotter_c">
+            <p>
+                <a href="http://www.hfcfwl.com  " target="_blank"> 合肥做网站 </a>
+                <a href="https://www.bjycxf.com/ " target="_blank"> 北京网站建设 </a>
+                <a href="http://www.bjycxf.com/ " target="_blank"> 北京网站设计 </a>
+                <a href="http://www.bjycxf.com " target="_blank"> 北京网站制作 </a>
+                <a href="http://www.bjycxf.com " target="_blank"> 北京建站公司 </a>
+                <a href="http://www.xinyaoshi.com/ " target="_blank"> 石家庄网站建设 </a>
+                <a href="http://www.internetke.com/ " target="_blank"> 北京网站制作 </a>
+                <a href="http://www.weiq.com/ " target="_blank"> 微博推广 </a>
+                <a href="http://www.seofuwu.com " target="_blank"> seo实战培训 </a>
+                <a href="http://www.szweb.cn " target="_blank"> 深圳网站设计 </a>
+                <a href="http://www.okkou.cn " target="_blank"> ok模板 </a>
+                <a href="http://www.duoyuanwangluo.com/ " target="_blank"> 兰州网站建设 </a>
+                <a href="http://www.yunkeseo.com " target="_blank"> seo </a>
+                <a href="http://www.636a.com  " target="_blank"> 成都网站建设 </a>
+                <a href="http://www.donhonet.net/ " target="_blank"> 北京网站制作 </a>
+                <a href="http://yx53.cn/ " target="_blank"> 义乌网站建设 </a>
+            </p>
+        </div>
+        <div class="fotter_b">
+            <div class="logo1">
+                <img src="../images/logo1.jpg" alt="网站制作公司" title="北京原创先锋网站建设公司">
+            </div>
+            <div class="gonce">
+                <span>
+                    <img src="../images/ghu_tu.png" alt="网站设计公司" title="北京原创先锋网站建设公司">010-67803788/66/87/89
+                    <br>
+                    <img src="../images/ghu_tu1.png" alt="北京原创先锋网站建设公司" title="北京原创先锋网站建设公司">北京市海淀区大钟寺十三号院华杰大厦11B8
+                </span>
+                <font>© Copyright 2008-2018 bjycxf.com All Rights Reserved 版权所有
+                    <br> 京ICP备09080439号 京公网安备11010802012755号
+                </font>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/index1.js"></script>
+</html>

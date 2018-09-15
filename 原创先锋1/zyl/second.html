@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于原创|原创先锋网站建设公司简介</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/zyl.css">
+    <link rel="stylesheet" href="css/section3.css">
+
+
+    <!-- 课题第一行标题效果 -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/animate-scroll.js"></script>
+    <script src="js/jquery.goup.js"></script>
+    <script src="js/jquery-canvas-sparkles.min.js"></script>
+
+
+    <script>
+
+        $(function () {
+            // 二维码显示与隐藏
+            $('#wei').mouseover(function () {
+                $('.erweima ').stop().slideDown(500)
+            })
+            $('#wei').mouseout(function () {
+                $('.erweima').stop().slideUp(500)
+            });
+            // tab栏目
+            $('.nav>ul>li').mouseover(function () {
+                $(this).children('ul').stop().slideDown(500)
+            });
+
+            $('.nav>ul>li').mouseout(function () {
+                $(this).children('ul').stop().slideUp(500)
+            });
+            var f = true;
+            var t = true;
+            var g = true;
+            var i = 0;
+            // 左右渐入
+            $(window).scroll(function () {
+                if (i <= $(this).scrollTop()) {
+                    // 正方向
+                    if (f) {
+                        if ($(document).scrollTop() >= 300) {
+                            f = false;
+                            $('.yc_b1').animate({ 'left': 0, 'opacity': 1 }, 800)
+                            $('.yc_b2').animate({ 'right': 0, 'opacity': 1 }, 800)
+                        }
+                    }
+                    if (t) {
+                        if ($(document).scrollTop() >= 500) {
+                            t = false;
+                            $('.ys_bt').animate({ 'top': 0, 'opacity': 1 }, 800)
+                        }
+                    }
+                    if (g) {
+                        if ($(document).scrollTop() >= 750) {
+                            g = false;
+                            $('.coimc_l').animate({ 'left': 0, 'opacity': 1 }, 800)
+                            $('.coimc_r').animate({ 'right': 0, 'opacity': 1 }, 800)
+
+                        }
+                    }
+                } else {
+                    // 反方向
+                    if (!f) {
+                        if ($(document).scrollTop() <= 400) {
+                            f = true;
+                            $('.yc_b1').animate({ 'left': "-500px", 'opacity': 0 }, 800)
+                            $('.yc_b2').animate({ 'right': "-500px", 'opacity': 0 }, 800)
+                        }
+                    }
+                    if (!t) {
+                        if ($(document).scrollTop() <= 600) {
+                            t = true;
+                            $('.ys_bt').animate({ 'top': "-50px", 'opacity': 0 }, 800)
+                        }
+                    }
+                    if (!g) {
+                        if ($(document).scrollTop() <= 950) {
+                            g = true;
+                            $('.coimc_l').animate({ 'left': "-400px", 'opacity': 0 }, 800)
+                            $('.coimc_r').animate({ 'right': "-400px", 'opacity': 0 }, 800)
+
+                        }
+                    }
+                }
+                i = $(this).scrollTop();
+            });
+
+
+
+            $(".tucoie>p").mouseover(function () {
+                //当前的li的兄弟元素的透明度变暗
+                $(this).siblings("p").css("color", '');
+                $(this).css("color", 'red')
+            });
+            $(".tucoie>p").mouseout(function () {
+                //.find()方法,针对当前的元素找里面的一些其他的元素
+                $(this).css("color", '');
+            });
+        });
+        // 回到顶部
+        $(document).ready(function () {
+            $.topcontrol({
+                trigger: 100,
+                bottomOffset: 10,
+                locationOffset: 180,
+                titleAsText: true,
+                title: '',
+            });
+        });
+        
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <!--header begin-->
+    <div class="box">
+        <div class="container w">
+            <div class="logo  animated fadeInLeft">
+                <a href="http://www.bjycxf.com">
+                    <img src="images/logo1.jpg">
+                </a>
+
+            </div>
+            <div class="dian  animated fadeInRight">
+
+                <div class="dian_t">
+                    <a href="http://www.bjycxf.com/About/contact.html" class="oiu">联系我们 | Contact Us</a>
+                    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2947626527&amp;site=qq&amp;menu=yes" target="_blank">
+                        <img src="images/A2.jpg" title="QQ咨询">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/A4.jpg" title="在线咨询">
+                    </a>
+                    <a href="http://weibo.com/bjycxf" target="_blank">
+                        <img src="images/A3.jpg" title="微博">
+                    </a>
+                    <a href="#" rel="nofollow" target="_blank" id='wei'>
+                        <img src="images/A1.jpg">
+                    </a>
+                    <a href="#" target="_blank" style=" margin-right:0px;">
+                        <img src="images/A5.jpg" title="定位">
+                    </a>
+                </div>
+                <div class='erweima'>
+                    <img src="images/erweima.jpg">
+                </div>
+                <div class="dian_b">
+                    <a href="tel:01068703788">
+                        <img src="images/tu5.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header end-->
+    <!--nav begin-->
+    <div class="nav w">
+        <ul>
+            <li>
+                <a href="../wp/主页/index.html">首页</a>
+            </li>
+            <li>
+                <a href="second.html">关于·原创
+                    <img src="images/bg.jpg" alt="">
+                </a>
+                <ul class="erji">
+                    <li>
+                        <a href="#">关于原创</a>
+                    </li>
+                    <li>
+                        <a href="#">设计优势</a>
+                    </li>
+                    <li>
+                        <a href="#">设计流程</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌故事</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../chenjun/chen.html">先锋·服务
+                    <img src="images/bg.jpg" alt="">
+                </a>
+                <ul class="erji">
+                    <li>
+                        <a href="#">定制型网站</a>
+                    </li>
+                    <li>
+                        <a href="#">响应式网站</a>
+                    </li>
+                    <li>
+                        <a href="#">APP定制开发</a>
+                    </li>
+                    <li>
+                        <a href="#">微信开发运营</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌VI设计</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../tan/index.1.html">原创·案例</a>
+            </li>
+            <li>
+                <a href="../wgf/share.html">先锋·分享</a>
+            </li>
+            <li>
+                <a href="../qx/contact.html">联系</a>
+            </li>
+        </ul>
+    </div>
+    <!--nav end-->
+    <!-- main begin -->
+    <div class="yc_banner ">
+        <div class="container w">
+            <div class="span1">简单创意 无限设计 </div>
+            <div class="span2">网站的灵魂是设计，设计的灵魂是文化</div>
+            <div class="span3">
+                <p>Is the soul of the website design, design is the soul of the culture</p>
+            </div>
+        </div>
+    </div>
+    <div class="yc_box">
+        <div class="container w">
+            <div class="yc_bt  animated fadeInDown">
+                <img src="images/pic7.jpg">
+            </div>
+            <div class="yc_bc ">
+                <h2>原创先锋的每一个案例都是自己的原创</h2>
+                <h2>原创先锋用原创提升产品竞争力</h2>
+                <br>
+                <p>原创先锋成立于2008年，10年专注品牌、营销、应用型网站建设，是集创意、VI设计、网页制作、数据库开发、APP定制开发为一体的信息化服务商。曾为众泰汽车、东方雨虹、中海建设总局、天津股权交易所、建国门街道总工会、中国仓储与配送协会、中国文学艺术基金会、文化置业、中国建筑科学研究院、北京成熟企划规划设计院、庆东纳碧安等提供专业的网站建设服务。专业的整体运营团队包括：UI设计师团队、H5前端效果团队、后端程序制作团队、市场团队和售后服务团队，我们坚持的是原创，追求的是品质。原创先锋，匠心品质。
+                </p>
+            </div>
+            <div class="yc_bb">
+                <div class="yc_b1">
+                    <h2>原创先锋能够帮助您解决以下问题：</h2>
+                    <br>
+                    <p>我们如何完成一个网站从无到有的孵化，让想法成为现实？</p>
+                    <p>我们如何帮助您结合企业特色打造具有体现品牌的网站？</p>
+                    <p>我们如何帮助您打造具有浏览体验的网站？</p>
+                    <p>我们如何打造具有营销性的网站？</p>
+                </div>
+                <div class="yc_b2">
+                    <img src="images/tu115.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ys_box">
+        <div class="container w">
+            <div class="ys_bt ">
+                <img src="images/pic8.jpg" alt="">
+            </div>
+            <div class="ys_bc ">
+                <p>我们专注网站建设十年，深刻了解网站全部细节</p>
+                <p>您想到的想不到的我们都帮您想到。</p>
+            </div>
+            <div class="coimc">
+                <div class="coimc_l ">
+                    <p>我们用服务给予客户优质的体验，从您成为我们客户的第一天，</p>
+                    <p>您将会有回家的温暖！</p>
+                    <p>我们注重每一个细节，</p>
+                    <p>以原创成就先锋品质！</p>
+                </div>
+
+                <div class="coimc_r ">
+                    <p>我们打造一个具备设计思维的创新团队，</p>
+                    <p>汇聚业内高端设计师及品牌策划师，</p>
+                    <p>让您的网站</p>
+                    <p>从设计到品牌理念都达到精准的定义与表达！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lc_box">
+        <div class="container w">
+            <div class="sjlc">
+                <div class="sjlc_t " data-animate-scroll='{"y": "-20","x": "0", "alpha": "0", "duration": ".6"}'>
+                    <div class="sjlc_tl  animated fadeInLeft">
+                        <img src="images/tu120.jpg" />
+                    </div>
+                    <div class="sjlc_tr ">
+                        <span>
+                            <img src="images/tu122.jpg" />提交需求</span>
+                    </div>
+                </div>
+                <div class="sjlc_l " data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}'>提交方案
+                    <div class="jiat">
+                        <img src="images/tu20.png" />
+                    </div>
+                </div>
+                <div class="qdht" data-animate-scroll='{"x": "-300","y": "0", "alpha": "0", "duration": ".6"}'>
+                    <img src="images/tu126.jpg" />签订合同</div>
+                <div class="qdhu" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}'>
+                    <img src="images/tu127.jpg" />
+                    <div class="jiat1">
+                        <img src="images/tu128.jpg" />
+                    </div>
+
+                </div>
+                <div class="fgdw">
+                    <img src="images/tu129.jpg" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}' />
+                    <span data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}'>风格定位</span>
+                    <div class="jiat2" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".8"}'>
+                        <img src="images/tu128.jpg" />
+                    </div>
+                </div>
+                <div class="qrxg">
+                    <span data-animate-scroll='{"x": "20","y": "0", "alpha": "0", "duration": ".6"}'>确认修改</span>
+                    <img src="images/tu130.jpg" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}' />
+                </div>
+                <div class="qmss">
+                    <span data-animate-scroll='{"x": "20","y": "0", "alpha": "0", "duration": ".6"}'>全面实施</span>
+                    <img src="images/tu131.jpg" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}' />
+                    <div class="jiat3" data-animate-scroll='{"x": "20","y": "0", "alpha": "0", "duration": ".6"}'>
+                        <img src="images/tu128.jpg" />
+                    </div>
+                </div>
+                <div class="csjj">
+                    <img src="images/tu21.png" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}' />
+                    <div class="csjj_t" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}'>测试阶段
+                        <img src="images/tu132.jpg" />
+                    </div>
+                    <div class="csjj_b" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}'>
+                        <img src="images/tu124.jpg" />
+                    </div>
+                </div>
+                <div class="whiy" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}'>维护阶段
+                    <img src="images/tu133.jpg" />维护阶段</div>
+                <div class="guaw" data-animate-scroll='{"x": "-300","y": "0", "alpha": "0", "duration": ".6"}'>
+                    <img src="images/tu22.png" />
+                </div>
+                <div class="guai" data-animate-scroll='{"y": "-300","x": "0", "alpha": "0", "duration": ".6"}'>
+                    <img src="images/tu23.png" />
+                </div>
+                <div class="guai1" data-animate-scroll='{"y": "-300","x": "0", "alpha": "0", "duration": ".6"}'>
+                    <img src="images/tu24.png" />
+                </div>
+                <div class="tjico">
+                    <ul>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu134.jpg" />
+                            </span>
+                            <em>
+                                <i>提交需求</i>客户提出建站的基本需求，
+                                <br />我们会在短时间内对于您的需求给予回复</em>
+                        </li>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu135.jpg" />
+                            </span>
+                            <em>
+                                <i>签订合同</i>在确认价格和工期的基础上，
+                                <br />我们开始签署合同</em>
+                        </li>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu136.jpg" />
+                            </span>
+                            <em>
+                                <i>风格定位</i>完成初稿设计，
+                                <br />首页设计及整站风格定位</em>
+                        </li>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu137.jpg" />
+                            </span>
+                            <em>
+                                <i>确认修改</i>客户对初稿进行审核，
+                                <br />我们将客户的意见进行完善最终确认</em>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gounn">
+                    <img src="images/tu138.jpg" />
+                    <div class="boieb">
+                        <img src="images/tu139.jpg" />
+                    </div>
+                </div>
+                <div class="tjico1">
+                    <ul>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu140.jpg" />
+                            </span>
+                            <em>
+                                <i>全面实施</i>完成所有设计，
+                                <br />并进行程序开发及前台后台整合</em>
+                        </li>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu141.jpg" />
+                            </span>
+                            <em>
+                                <i>测试阶段</i>对网站进行整体测试，
+                                <br />检查文字链接及程序的稳定性和压力测试</em>
+                        </li>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu142.jpg" />
+                            </span>
+                            <em>
+                                <i>验收阶段</i>客户依据合同定下的需求，
+                                <br />进行验收并签署收验报告</em>
+                        </li>
+                        <li data-animate-scroll='{"x": "20","y": "20","rotation": "3","alpha": "0", "duration": ".6"}'>
+                            <span>
+                                <img src="images/tu143.jpg" />
+                            </span>
+                            <em>
+                                <i>维护阶段</i>保证网站的正常运营，
+                                <br />保证网站的正常运营</em>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bmji animated fadeInRight" data-animate-scroll='{"x": "300","y": "0", "alpha": "0", "duration": ".6"}'>
+                    <img src="images/tu144.jpg" />
+                </div>
+                <div class="boimmm" data-animate-scroll='{"y": "20","x": "0", "alpha": "0", "duration": ".6"}'>
+                    <img src="images/tu145.jpg" />
+                </div>
+            </div>
+            <div class="soi">
+                <img src="images/tu146.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class='yc_bottom'>
+        <div class="container w">
+            <div class="yc_story">
+                <img src="images/tu147.jpg " class='animated fadeInDown' alt="">
+            </div>
+            <div class="story_bg">
+                <img src="images/tu25.png" class='animated fadeInRight' alt="">
+                <div class="tucoie">
+                    <p>
+                        <em>创立</em>
+                    </p>
+                    <p>创立之初，秉持原创是件不容易的事</p>
+                    <p>还年轻的我们承受着来自各方面的压力</p>
+                    <div class="jiuu">&nbsp;&nbsp;</div>
+                    <p>对互联网充满无限热情和激情</p>
+                    <p>漫步在生存与坚持的原则之下</p>
+                    <div class="jiuu">&nbsp;&nbsp;</div>
+                    <p>
+                        <em>成长</em>
+                    </p>
+                    <p>明白原创先锋的真正意义</p>
+                    <p>打造具有设计思维的创新团队</p>
+                    <div class="jiuu">&nbsp;&nbsp;</div>
+                    <p>注重每一个细节，</p>
+                    <p>以原创融合创意，差异化体现品牌价值</p>
+                    <div class="jiuu">&nbsp;&nbsp;</div>
+                    <p>
+                        <em>未来</em>
+                    </p>
+                    <p>在没有硝烟的战场</p>
+                    <p>抛去繁华，重获新生</p>
+                    <div class="jiuu">&nbsp;&nbsp;</div>
+                    <p>我们的故事才刚刚开始</p>
+                    <p>以原创实现高效、精确并充满创造性的成果</p>
+                    <p>赢得更多客户的信任</p>
+                    <div class="jiuu">&nbsp;&nbsp;</div>
+                    <p>
+                        <em>你，准备好了吗？</em>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- main end -->
+    <!-- footer begin -->
+    <div class="box3">
+        <div class="container w">
+            <div class="fotter_l ">
+                <div class="fotter_lt">YC &amp; 原创官方微信</div>
+                <div class="fotter_lb">
+                    <img src="images/tu28.jpg">
+                </div>
+            </div>
+            <div class="fotter_c ">
+                <div class="fotter_ct">Contact Us &amp; 联系我们</div>
+                <div class="fotter_cb">
+                    <h2>TEL： 010-68703766/88</h2>
+                    <div class="zhui">
+                        <p>地址：北京市海淀区大钟寺十三号院华杰大厦11B8室</p>
+                    </div>
+                    <p>© Copyright 2008-2018 bjycxf.com All Rights Reserved 版权所有</p>
+                    <p>京ICP备09080439号 京公网安备11010802012755号
+
+                        <span id="cnzz_stat_icon_1257118248">
+                            <a href="http://www.cnzz.com/stat/website.php?web_id=1257118248" target="_blank" title="站长统计">
+                                <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+                            </a>
+                        </span>
+                        <a href="http://tongji.baidu.com/web/welcome/login">
+                            <img src="http://www.bjycxf.com/tu/tu33.png">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="fotter_r ">
+                <div class="fotter_rt">本站导航 &amp; 服务项目</div>
+                <div class="fotter_rb">
+                    <ul>
+                        <li>
+                            <a href="http://www.bjycxf.com/About/about.html">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/Supporting_services/Supporting_services.html">建站服务</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/qywz/">原创案例</a>
+                        </li>
+                        <li>
+                            <a href="http://demo.bjycxf.com/">功能演示</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="http://www.bjycxf.com/">网站建设</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/">网页设计</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/">网站制作</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/jianzhanchangshi/">建站常识</a>
+                        </li>
+                    </ul>
+                    <ul class="qcbj">
+                        <li>
+                            <a href="http://www.bjycxf.com/">微站开发</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/">推广策划</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/">平面设计</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bjycxf.com/jianzhanchangshi/">建站方案</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="topcontrol" title="返回顶部">
+            <img src="images/top.png" style="width:45px; height:45px; border:0;">
+        </div> -->
+    </div>
+    <!-- footer end -->
+
+</body>
+  <script>
+  // 底部动画
+  $(".yc_bottom").sparkle({
+            color: "rainbow",
+            count: 100,
+            overlap: 0,
+            speed: 2,
+            minSize: 5,
+            maxSize: 15,
+            direction: "both"
+        });	
+
+  </script>
+
+
+</html>

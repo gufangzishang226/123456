@@ -1,0 +1,194 @@
+/*清除元素默认的内外边距  */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/*让所有斜体 不倾斜*/
+em,
+i {
+    font-style: normal;
+}
+
+/*去掉列表前面的小点*/
+li {
+    list-style: none;
+}
+
+/*图片没有边框   去掉图片底侧的空白缝隙*/
+img {
+    border: 0; /*ie6*/
+    vertical-align: middle;
+}
+
+/*让button 按钮 变成小手*/
+button {
+    cursor: pointer;
+}
+
+/*取消链接的下划线*/
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e33333;
+}
+
+button,
+input {
+    font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    /*取消轮廓线 蓝色的*/
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+    font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.w {
+    width: 1004px;
+    margin: 0 auto;
+}
+
+.erji {
+    display: none;
+    position: absolute;
+    top: 180px;
+    width: 180px;
+    /*background-color: #fff;*/
+    /*z-index: 999;*/
+}
+.erji li {
+    background-color: #fff;
+}
+.erji li a {
+    padding: 0;
+    width: 180px;
+    height: 35px;
+    line-height: 30px;
+    color: #333;
+    text-align: center;
+}
+.foot {
+    width: 100%;
+    background: #343839;
+    padding: 34px 0 20px 0;
+}
+.footc {
+    overflow: hidden;
+    width: 1004px;
+}
+.foot_l {
+    float: left;
+    width: 16%;
+}
+.foot_lt {
+    color: #fff;
+    font-size: 14px;
+    height: 35px;
+}
+.foot_c {
+    float: left;
+    width: 59%;
+    margin-bottom: 10px;
+}
+.foot_r {
+    float: right;
+    width: 25%;
+}
+.callus {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 29px;
+    height: 35px;
+}
+.xinxi {
+    border-left: 1px solid #222425;
+    padding-left: 28px;
+    color: #fff;
+}
+.xinxi h2 {
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px
+}
+.xinxi .dizhi {
+    width: 285px;
+    margin-left: 0;
+    border-bottom: 1px solid #222425;
+    line-height: 22px;
+    font-size: 14px;
+    color: #ffffff;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+}
+.xinxi span {
+    font-size: 12px;
+    line-height: 24px;
+}
+.foot_rt {
+    color: #fff;
+    font-size: 14px;
+    /* margin-left: 29px; */
+    height: 35px;
+}
+.foot_ru ul{
+    float: left;
+    margin-right: 27px;
+    margin-top: 10px;
+}
+
+.foot_ru ul a {
+    display: block;
+    color: #fff;
+    height: 45px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.xinxi img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+a, li, dl {
+    -webkit-transition: all 0.2s linear;
+    -mos-transition: all 0.2s linear;
+    -mz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+a:hover, li:hover, dl:hover {
+    -webkit-transition: all 0.2s linear;
+    -mos-transition: all 0.2s linear;
+    -mz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+a {
+    blr: expression(this.onFocus=this.blur());
+    outline: none;
+}
